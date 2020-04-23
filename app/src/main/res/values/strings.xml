@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+
+    <!--    activity_main.xml-->
+    <string name="button_game">GAME</string>
+    <string name="button_exit">EXIT</string>
+
+    <!--    activity_game.xml-->
+    <string name="textView_turn"> </string>
+    <string name="button_newGame">NEW GAME</string>
+    <string name="button_XAndO"> </string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:context=".GameActivity">
+
+    <TextView
+            android:text="@string/textView_turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTurn" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="24sp" android:layout_marginTop="32dp"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:layout_editor_absoluteX="0dp" app:layout_constraintTop_toBottomOf="@+id/textViewTurn"
+            app:layout_constraintBottom_toTopOf="@+id/buttonNewGame" android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp" android:id="@+id/linearLayoutVertical">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/linearLayoutHorizontal0"
+                android:layout_weight="0.33">
+            <Button
+                    android:text="@string/button_XAndO"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/button00" android:layout_weight="0.33"
+                    android:onClick="onClick"
+                    tools:ignore="ButtonStyle,NestedWeights"/>
+            <Button
+                    android:text="@string/button_XAndO"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/button01" android:layout_weight="0.33"
+                    android:onClick="onClick"
+                    tools:ignore="ButtonStyle"/>
+            <Button
+                    android:text="@string/button_XAndO"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/button02" android:layout_weight="0.33"
+                    android:onClick="onClick"
+                    tools:ignore="ButtonStyle"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/linearLayoutHorizontal1"
+                android:onClick="onClick"
+                android:layout_weight="0.33">
+            <Button
+                    android:text="@string/button_XAndO"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/button10" android:layout_weight="0.33"
+                    android:onClick="onClick"
+                    tools:ignore="ButtonStyle,NestedWeights"/>
+            <Button
+                    android:text="@string/button_XAndO"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/button11" android:layout_weight="0.33"
+                    android:onClick="onClick"
+                    tools:ignore="ButtonStyle"/>
+            <Button
+                    android:text="@string/button_XAndO"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/button12" android:layout_weight="0.33"
+                    android:onClick="onClick"
+                    tools:ignore="ButtonStyle"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/linearLayoutHorizontal2"
+                android:onClick="onClick"
+                android:layout_weight="0.33">
+            <Button
+                    android:text="@string/button_XAndO"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/button20" android:layout_weight="0.33"
+                    android:onClick="onClick"
+                    tools:ignore="ButtonStyle,NestedWeights"/>
+            <Button
+                    android:text="@string/button_XAndO"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/button21" android:layout_weight="0.33"
+                    android:onClick="onClick"
+                    tools:ignore="ButtonStyle"/>
+            <Button
+                    android:text="@string/button_XAndO"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/button22" android:layout_weight="0.33"
+                    android:onClick="onClick"
+                    tools:ignore="ButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+            android:text="@string/button_newGame"
+            android:layout_width="0dp"
+            android:layout_height="128dp"
+            android:id="@+id/buttonNewGame"
+            android:onClick="onClickNewGame"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="24sp" android:layout_marginLeft="64dp" android:layout_marginStart="64dp"
+            android:layout_marginRight="64dp" android:layout_marginEnd="64dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutVertical" android:layout_marginTop="32dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
